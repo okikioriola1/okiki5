@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body{
+    font-family:"Karla"
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+/* hide close when burger shown */
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon{
+    display:none;
+}
+.navbar-toggler:not(.collapsed) .close-icon {
+    display: inline;
+}
+.navbar-light{
+    background-color: #fff !important;
+}
+.nav-link{
+    text-transform:uppercase;
+    font-size: 14px;
+    color: rgb(61, 60, 60) !important;
+}
+.nav-link:hover{
+    color: black !important;
+}
+.active:hover{
+   background-color:hsl(256, 26%, 20%);
+   color: #fff !important;
+   transition: 0.7s;
+
+}
+.hero{
+    position:relative;
+    background: url("images/bg-pattern-intro-right-desktop.svg") no-repeat top right, url("images/bg-pattern-intro-left-desktop.svg") no-repeat bottom left,hsl(256, 26%, 20%);
+    
+}
+.hero-container{
+    display:grid;
+    grid-template: 1fr/ 1fr 1fr;
+    padding-bottom: 100px;
+    height: 500px;
+}
+.hero-img{
+    grid-area: 1/2/1/2;
+    margin-top:60px;
+ 
+}
+#img-desktop{
+    display: block;
+}
+#img-mobile{
+    display: none;
+}
+.hero-image{
+    overflow: visible;
+    padding-top:70px;
+    padding-left: 50px;
+    height: 550px;
+    width:450px;
+    
+}
+.hero-text{
+    grid-area: 1/1/1/1;
+    margin-left: 60px;
+
+}
+.hero-heading{
+    color:#fff;
+    
+    font-size: 50px;
+    padding-top: 50px;
+    font-family:"DM Serif Display"
+}
+.hero-p{
+    color:#fff;
+    font-size: 15px ;
+    padding: 10px 10px;
+}
+.hero-line{
+    width: 15rem;
+    height: .2rem;
+    background-color:hsl(0, 2%, 88%);
+    margin-top: 90px;
+}
+.view-plan-btn{
+    border-radius: 0px;
+    background: transparent;
+    border:2px hsl(0, 0%, 98%) solid;
+    text-transform: uppercase;
+    transition: 0.7s;
+    font-weight: bold;
+}
+.view-plan-btn:hover{
+    background-color: white;
+    color:hsl(256, 26%, 20%);
+    border: none;
+}
+.features{
+    padding-top: 100px;
+}
+.features-line{
+    width: 15rem;
+    height: .2rem;
+    background-color:hsl(0, 2%, 88%);
+    margin-top: 90px;
+}
+.features-heading{
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 50px;
+    padding-bottom: 60px;
+    font-family:"DM Serif Display"
+}
+.card{
+    border:none;
+}
+.feature-img{
+    width:70px;
+    height:70px;
+}
+.card-header{
+    background:none;
+    border:none;
+    font-family:"DM Serif Display"
+}
+.card-body{
+    margin-top:0px;
+    padding-top: 0px;
+}
+
+.find-out{
+    display:grid;
+    grid-template: 1fr/1fr 1fr;
+    background: url("images/bg-pattern-how-we-work-desktop.svg") no-repeat top right, hsl(256, 26%, 20%);
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+.find-out-info h3{
+    grid-area: 1/1/1/1;
+    color:#fff;
+    font-size:40px;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-family:"DM Serif Display"
+}
+.find-out-btn{
+    grid-area: 1/2/1/2;
+    padding: 50px 200px;
+}
+.how-we-work-btn{
+    background:transparent;
+    border-radius: 0px;
+    border: 2px #fff solid;
+    width: 150px; 
+    transition: 0.7s;
+    
+}
+.how-we-work-btn:hover{
+    background-color: white;
+    color:hsl(256, 26%, 20%);
+    border: none;
+}
+.footer{
+    margin-top: 130px;
+    background: url("images/bg-pattern-footer-desktop.svg") no-repeat top left, hsl(0, 0%, 98%);
+
+}
+.footer-header{
+    display:grid;
+    grid-template: 1fr/ 1fr 1fr;
+}
+.footer-logo{
+    grid-area: 1/1/1/1;
+    padding-top:30px;
+}
+.footer-socials{
+    padding-top:30px;
+    grid-area: 1/2/1/2;
+    padding-left:200px;
+    
+}
+.socials{
+    
+    color: black;
+    display: inline;
+    font-size: 20px;
+    padding-left: 10px;
+    transition: 0.5s;
+}
+.footer-body{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+}
+.our-company{
+    padding: 20px;
+    grid-area: 1/1/1/1;
+}
+.help-me{
+    grid-area:1/2/1/2;
+    padding: 20px;
+}
+.contact{
+    grid-area: 1/3/1/3;
+    padding: 20px;
+}
+.others{
+    grid-area: 1/4/1/4;
+    padding: 20px;
+}
+.footer-links{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight:bold;
+    color:black;
+}
+.footer-links:hover{
+    color: black;
+}
+.footer-info-header{
+    color: rgb(204, 199, 199);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+@media(max-width: 800px){
+    .myNav {
+        height: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 8%;
+        left: 0;
+        background: url("./images/bg-pattern-mobile-nav.svg");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+        background-color:hsl(256, 26%, 20%);
+        transition: all 1s;
+      }
+      
+      .navbar-nav {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+    
+      .nav-link {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+   
+    .nav{
+        background-color: hsl(256, 26%, 20%) !important;
+        color: white !important;
+        text-align: center;
+    }
+    .nav-link{
+        color: white !important;
+    }
+    .active:hover{
+        background-color: white;
+        color: hsl(256, 26%, 20%)!important;
+    }
+
+     .hero{
+        position:relative;
+        background: url("images/bg-pattern-intro-right-mobile.svg") no-repeat bottom right, url("images/bg-pattern-intro-left-mobile.svg") no-repeat center left,hsl(256, 26%, 20%);
+        
+    }
+    .hero-container{
+        display:grid;
+        grid-template: 1fr 1fr / 1fr; 
+        height: 700px;       
+    }
+    .hero-img{
+        grid-area: 1/1/1/1;
+        margin-top: 30px;
+    }
+    .hero-text{
+        grid-area: 2/1/2/1;
+        margin-left: 0px;
+    }
+    #img-desktop{
+        display: none;
+    }
+    #img-mobile{
+        display: block;
+    }
+
+    .hero-image{
+        height: 400px;
+        width:100%;
+        margin-top: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+        object-fit: cover;
+        
+    }
+    .hero-line{
+        display: none;
+    }
+    .hero-heading{
+        color:#fff;
+        font-size: 30px;
+        padding-top: 10px;
+        font-family:"DM Serif Display";
+        text-align: center;
+    }
+    .hero-p{
+        color:#fff;
+        font-size: 15px ;
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .hero-btn{
+        text-align:center;
+    }
+    .features{
+        padding-top: 40px;
+    }
+    .features-line{
+        width: 10rem;
+        height: .2rem;
+        background-color:hsl(0, 2%, 88%);
+        margin-top: 40px; 
+        text-align: center;
+        margin-left: 150px;
+    }
+    .features-heading{
+        padding-top: 30px;
+        font-weight: bold;
+        font-size: 40px;
+        padding-bottom: 60px;
+        font-family:"DM Serif Display";
+        text-align: center;
+    }
+    .card{
+        text-align: center;
+    }
+    .card-header-img{
+        text-align: center;
+    }
+    .find-out{
+        display:grid;
+        grid-template: 1fr 1fr / 1fr;
+        background: url("images/bg-pattern-how-we-work-mobile.svg") no-repeat top right, hsl(256, 26%, 20%);
+        margin-top: 100px;
+        padding-bottom: 40px;
+        width: 400px;
+        
+    }
+    .find-out-info h3{
+        grid-area: 1/1/1/1;
+        color:#fff;
+        font-size:30px;
+        padding-top: 30px;
+        font-family:"DM Serif Display";
+        text-align: center;
+    }
+    .find-out-btn{
+        grid-area: 2/1/2/1;
+        padding: 20px 0px;
+        text-align: center;
+        
+        
+    }
+    .footer{
+        margin-top: 50px;
+        background: url("images/bg-pattern-footer-mobile.svg") no-repeat top left, hsl(0, 0%, 98%);
+    
+    }
+    .footer-header{
+        display:grid;
+        grid-template: 1fr 1fr / 1fr;
+    }
+    .footer-logo{
+        grid-area: 1/1/1/1;
+        padding-top:30px;
+        text-align: center;
+    }
+    .footer-socials{
+        padding-top:20px;
+        grid-area: 2/1/2/1;
+        text-align: center;
+        padding-left: 0px;
+        
+        
+        
+    }
+    .footer-body{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+        text-align: center;
+        
+    }
+    .our-company{
+        padding: 10px;
+        grid-area: 1/1/1/1;
+    }
+    .help-me{
+        grid-area:2/1/2/1;
+        padding-top: 10px;
+    }
+    .contact{
+        grid-area: 3/1/3/1;
+        padding-top: 10px;
+    }
+    .others{
+        grid-area: 4/1/4/1;
+        padding-top: 10px;
+    }
+    
+}
